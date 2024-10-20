@@ -36,7 +36,7 @@ This project consists of a Flask backend and a React frontend that visualizes re
 
 6. Run the Flask app:
     ```bash
-    python app.py
+    python3 app.py
     ```
    The backend server will start at `http://127.0.0.1:5000`.
 
