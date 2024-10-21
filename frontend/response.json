@@ -1,0 +1,314 @@
+[
+  {
+    "action_groups": {},
+    "actions": {
+      "manage": {
+        "attributes": null,
+        "description": null,
+        "id": "2acc3cc615134fe79962ff4da53533aa",
+        "key": "manage",
+        "name": "manage"
+      },
+      "view": {
+        "attributes": null,
+        "description": null,
+        "id": "204f99e990cc409487dcff07efb8ef07",
+        "key": "view",
+        "name": "view"
+      }
+    },
+    "attributes": {},
+    "created_at": "2024-10-19T05:42:42+00:00",
+    "description": null,
+    "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+    "id": "57b824df04034272942eae37a6037c87",
+    "key": "pull_request",
+    "name": "Pull Request",
+    "organization_id": "731d76db66964398a0f73aa566cd5833",
+    "project_id": "7932f675c83f4f409ad538b742f819a2",
+    "relations": {
+      "belongs_to_repo": {
+        "description": null,
+        "resource": "repo",
+        "resource_id": "e8257b710c014387826bff1ea0a4241e"
+      }
+    },
+    "roles": {
+      "viewer": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:42+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": {
+          "id": "74d08d25777e4b6d95cb67664c8f571a",
+          "users_with_role": [
+            {
+              "linked_by_relation": "belongs_to_repo",
+              "on_resource": "repo",
+              "relation_id": "7c0128d5106b43b68c02bb2996a6fdb8",
+              "resource_id": "e8257b710c014387826bff1ea0a4241e",
+              "role": "viewer",
+              "role_id": "69b251ef106d45c38fe5597f41174c0d",
+              "when": { "no_direct_roles_on_object": false }
+            }
+          ],
+          "when": { "no_direct_roles_on_object": false }
+        },
+        "id": "bf855b0c77924ebbb2c248ad19363fc0",
+        "key": "viewer",
+        "name": "Viewer",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "pull_request",
+        "resource_id": "57b824df04034272942eae37a6037c87",
+        "updated_at": "2024-10-19T05:42:42+00:00"
+      }
+    },
+    "type_attributes": null,
+    "updated_at": "2024-10-19T05:42:42+00:00",
+    "urn": "prn:sumanworkspace:default:pull_request"
+  },
+  {
+    "action_groups": {},
+    "actions": {
+      "manage": {
+        "attributes": null,
+        "description": null,
+        "id": "ae0fe42ac65a4df2a4d38a57a819bb60",
+        "key": "manage",
+        "name": "manage"
+      },
+      "view": {
+        "attributes": null,
+        "description": null,
+        "id": "3367ba1896294e3eb521fce13e20dd94",
+        "key": "view",
+        "name": "view"
+      }
+    },
+    "attributes": {},
+    "created_at": "2024-10-19T05:42:38+00:00",
+    "description": null,
+    "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+    "id": "a68ca68e44744902b4d3258cec48389e",
+    "key": "org",
+    "name": "Organization",
+    "organization_id": "731d76db66964398a0f73aa566cd5833",
+    "project_id": "7932f675c83f4f409ad538b742f819a2",
+    "relations": {},
+    "roles": {
+      "org_admin": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:38+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": null,
+        "id": "6e8728fd9e994e8bb6d956a387551c3f",
+        "key": "org_admin",
+        "name": "Organization Admin",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view", "manage"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "org",
+        "resource_id": "a68ca68e44744902b4d3258cec48389e",
+        "updated_at": "2024-10-19T05:42:38+00:00"
+      },
+      "viewer": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:38+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": null,
+        "id": "a0c3db8bdd7744bba506b75b846050ab",
+        "key": "viewer",
+        "name": "Viewer",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "org",
+        "resource_id": "a68ca68e44744902b4d3258cec48389e",
+        "updated_at": "2024-10-19T05:42:38+00:00"
+      }
+    },
+    "type_attributes": null,
+    "updated_at": "2024-10-19T05:42:38+00:00",
+    "urn": "prn:sumanworkspace:default:org"
+  },
+  {
+    "action_groups": {},
+    "actions": {
+      "manage": {
+        "attributes": null,
+        "description": null,
+        "id": "aaf865d5bf7b407fa5ae6a3ea23b456a",
+        "key": "manage",
+        "name": "manage"
+      },
+      "view": {
+        "attributes": null,
+        "description": null,
+        "id": "35dc5afc942048f2a16f2d86befde217",
+        "key": "view",
+        "name": "view"
+      }
+    },
+    "attributes": {},
+    "created_at": "2024-10-19T05:42:41+00:00",
+    "description": null,
+    "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+    "id": "b5cd14638a1849c093c51825a27fbf60",
+    "key": "issue",
+    "name": "Issue",
+    "organization_id": "731d76db66964398a0f73aa566cd5833",
+    "project_id": "7932f675c83f4f409ad538b742f819a2",
+    "relations": {
+      "belongs_to_repo": {
+        "description": null,
+        "resource": "repo",
+        "resource_id": "e8257b710c014387826bff1ea0a4241e"
+      }
+    },
+    "roles": {
+      "viewer": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:41+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": {
+          "id": "7bf871695bbb4aa9987b5171ef8253de",
+          "users_with_role": [
+            {
+              "linked_by_relation": "belongs_to_repo",
+              "on_resource": "repo",
+              "relation_id": "753fad8c38074feb9905bed5376c9d36",
+              "resource_id": "e8257b710c014387826bff1ea0a4241e",
+              "role": "viewer",
+              "role_id": "69b251ef106d45c38fe5597f41174c0d",
+              "when": { "no_direct_roles_on_object": false }
+            }
+          ],
+          "when": { "no_direct_roles_on_object": false }
+        },
+        "id": "29a145f72c424c1c851a3fda72f66497",
+        "key": "viewer",
+        "name": "Viewer",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "issue",
+        "resource_id": "b5cd14638a1849c093c51825a27fbf60",
+        "updated_at": "2024-10-19T05:42:41+00:00"
+      }
+    },
+    "type_attributes": null,
+    "updated_at": "2024-10-19T05:42:41+00:00",
+    "urn": "prn:sumanworkspace:default:issue"
+  },
+  {
+    "action_groups": {},
+    "actions": {
+      "manage": {
+        "attributes": null,
+        "description": null,
+        "id": "f024a098724845ecb0b7dd401d4e3519",
+        "key": "manage",
+        "name": "manage"
+      },
+      "view": {
+        "attributes": null,
+        "description": null,
+        "id": "7d6f50c879d54372853fac5002180f80",
+        "key": "view",
+        "name": "view"
+      }
+    },
+    "attributes": {},
+    "created_at": "2024-10-19T05:42:40+00:00",
+    "description": null,
+    "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+    "id": "e8257b710c014387826bff1ea0a4241e",
+    "key": "repo",
+    "name": "Repository",
+    "organization_id": "731d76db66964398a0f73aa566cd5833",
+    "project_id": "7932f675c83f4f409ad538b742f819a2",
+    "relations": {
+      "belongs_to": {
+        "description": null,
+        "resource": "org",
+        "resource_id": "a68ca68e44744902b4d3258cec48389e"
+      }
+    },
+    "roles": {
+      "repo_admin": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:40+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": {
+          "id": "a3e79d17c14e4aa385930004c88f449c",
+          "users_with_role": [
+            {
+              "linked_by_relation": "belongs_to",
+              "on_resource": "org",
+              "relation_id": "caf19fa8cba44b08aa647da3163fe907",
+              "resource_id": "a68ca68e44744902b4d3258cec48389e",
+              "role": "org_admin",
+              "role_id": "6e8728fd9e994e8bb6d956a387551c3f",
+              "when": { "no_direct_roles_on_object": false }
+            }
+          ],
+          "when": { "no_direct_roles_on_object": false }
+        },
+        "id": "2167cce95c044587b94d2146dadb72d3",
+        "key": "repo_admin",
+        "name": "Repository Admin",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view", "manage"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "repo",
+        "resource_id": "e8257b710c014387826bff1ea0a4241e",
+        "updated_at": "2024-10-19T05:42:40+00:00"
+      },
+      "viewer": {
+        "attributes": null,
+        "created_at": "2024-10-19T05:42:40+00:00",
+        "description": null,
+        "environment_id": "5e81ff33a2e348f3aebebbbf3dd158c5",
+        "extends": [],
+        "granted_to": {
+          "id": "8abe09d50e7846179cbc62629744f8eb",
+          "users_with_role": [
+            {
+              "linked_by_relation": "belongs_to",
+              "on_resource": "org",
+              "relation_id": "caf19fa8cba44b08aa647da3163fe907",
+              "resource_id": "a68ca68e44744902b4d3258cec48389e",
+              "role": "viewer",
+              "role_id": "a0c3db8bdd7744bba506b75b846050ab",
+              "when": { "no_direct_roles_on_object": false }
+            }
+          ],
+          "when": { "no_direct_roles_on_object": false }
+        },
+        "id": "69b251ef106d45c38fe5597f41174c0d",
+        "key": "viewer",
+        "name": "Viewer",
+        "organization_id": "731d76db66964398a0f73aa566cd5833",
+        "permissions": ["view"],
+        "project_id": "7932f675c83f4f409ad538b742f819a2",
+        "resource": "repo",
+        "resource_id": "e8257b710c014387826bff1ea0a4241e",
+        "updated_at": "2024-10-19T05:42:40+00:00"
+      }
+    },
+    "type_attributes": null,
+    "updated_at": "2024-10-19T05:42:40+00:00",
+    "urn": "prn:sumanworkspace:default:repo"
+  }
+]

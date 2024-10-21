@@ -57,6 +57,26 @@ This project consists of a Flask backend and a React frontend that visualizes re
     ```
    The frontend application will open in your default web browser at `http://localhost:3000`.
 
+## Images
+
+Here are the visual representations and screenshots related to the project.
+
+### Graph Visualization 1
+
+![Graph Visualization](./frontend/src/assets/Graph1.png)
+
+### Graph Visualization 2
+
+![Graph Visualization](./frontend/src/assets/Graph2.png)
+
+### Graph Visualization 3
+
+![Graph Visualization](./frontend/src/assets/Graph3.png)
+
+### API JSON Response Visualization
+
+![API JSON Response](./frontend/src/assets/Api%20response%20Postman.png)
+
 ## Usage
 The React app will fetch data from the Flask backend and visualize it as a graph. Click on the nodes in the graph to see their labels.
 

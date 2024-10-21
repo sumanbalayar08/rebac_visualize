@@ -150,8 +150,8 @@ const GraphVisualization: React.FC = () => {
             map: new THREE.CanvasTexture(createLabelCanvas(node.label)),
           })
         );
-        sprite.scale.set(30, 10, 1);
-        sprite.position.set(7, 0, 0); // Position the label to the right of the sphere
+        sprite.scale.set(20, 10, 0);
+        sprite.position.set(7, 0, 0); 
         group.add(sprite);
 
         return group;
