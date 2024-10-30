@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import GraphVisualization from './components/GraphVisualization';
+import GraphVisualisation from './components/GraphVisualisation';
 
 function App() {
   return (
     <div className="App">
-      <GraphVisualization/>
+      {/* This is using React Flow */}
+      <GraphVisualisation/>
     </div>
   );
 }

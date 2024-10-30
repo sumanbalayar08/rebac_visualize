@@ -59,19 +59,15 @@ This project consists of a Flask backend and a React frontend that visualizes re
 
 ## Images
 
-Here are the visual representations and screenshots related to the project.
+Here are the visual representations and screenshots related to the project using ReactFlow
 
 ### Graph Visualization 1
 
-![Graph Visualization](./frontend/src/assets/Graph1.png)
+![Graph Visualization](./frontend/src/assets/Graph4.png)
 
 ### Graph Visualization 2
 
-![Graph Visualization](./frontend/src/assets/Graph2.png)
-
-### Graph Visualization 3
-
-![Graph Visualization](./frontend/src/assets/Graph3.png)
+![Graph Visualization](./frontend/src/assets/Graph5.png)
 
 ### API JSON Response Visualization
 

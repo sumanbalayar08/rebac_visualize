@@ -15,6 +15,7 @@
     "react-dom": "^18.3.1",
     "react-force-graph": "^1.44.6",
     "react-scripts": "5.0.1",
+    "reactflow": "^11.11.4",
     "three": "^0.169.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
