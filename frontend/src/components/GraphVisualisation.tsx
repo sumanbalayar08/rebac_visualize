@@ -1,5 +1,3 @@
-//USING ReactFlow
-
 import React, { useEffect } from "react";
 import ReactFlow, {
   Background,
@@ -25,6 +23,14 @@ interface Resource {
     [key: string]: {
       id: string;
       name: string;
+      granted_to?: {
+        users_with_role?: Array<{
+          linked_by_relation: string;
+          on_resource: string;
+          role: string;
+          role_id: string;
+        }>;
+      };
     };
   };
 }
@@ -42,22 +48,26 @@ const GraphVisualisation: React.FC = () => {
         const nodes: Node[] = [];
         const links: Edge[] = [];
 
+        const roleNodeMap = new Map<string, string>();
+
+
         data.forEach((resource) => {
           // Create main resource nodes
           nodes.push({
             id: resource.id,
             data: { label: `${resource.name} (${resource.key})` },
-            position: { x: 600, y: 400 },
+            position: { x: Math.random() * 600, y: Math.random() * 400 },
             style: { background: "#bbdefb", padding: 8 },
           });
 
           // Create role nodes and links
           Object.entries(resource.roles).forEach(([roleName, roleDetails]) => {
             const roleNodeId = `${resource.id}-${roleName}`;
+            roleNodeMap.set(`${resource.key}-${roleName}`, roleNodeId);
             nodes.push({
               id: roleNodeId,
               data: { label: `${roleDetails.name} (${resource.key})` },
-              position: { x: 600, y: 400 },
+              position: { x: Math.random() * 600, y: Math.random() * 400 },
               style: { background: "#ffcdd2", padding: 8 },
             });
 
@@ -68,6 +78,23 @@ const GraphVisualisation: React.FC = () => {
               target: resource.id,
               label: "has role on",
             });
+
+            if (roleDetails.granted_to?.users_with_role) {
+              roleDetails.granted_to.users_with_role.forEach((derivation) => {
+                const sourceRoleNodeId = roleNodeMap.get(
+                  `${derivation.on_resource}-${derivation.role}`
+                );
+                if (sourceRoleNodeId) {
+                  links.push({
+                    id: `derive-${sourceRoleNodeId}-${roleNodeId}`,
+                    source: sourceRoleNodeId,
+                    target: roleNodeId,
+                    label: "derives",
+                    animated:true
+                  });
+                }
+              });
+            }
 
             // Add permissions based on role
             if (roleName === "org_admin") {
