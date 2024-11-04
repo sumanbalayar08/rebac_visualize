@@ -63,11 +63,11 @@ Here are the visual representations and screenshots related to the project using
 
 ### Graph Visualization 1
 
-![Graph Visualization](./frontend/src/assets/Graph4.png)
+![Graph Visualization](./frontend/src/assets/Graph6.png)
 
 ### Graph Visualization 2
 
-![Graph Visualization](./frontend/src/assets/Graph5.png)
+![Graph Visualization](./frontend/src/assets/Graph7.png)
 
 ### API JSON Response Visualization
 
